@@ -1,3 +1,21 @@
+/* Global Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+/* Header Styles */
+header {
+  height: 50px;
+}
+
 /* Dark Mode */
 .dark {
   background-color: #243447;

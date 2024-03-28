@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Blog | Tom Burzynski</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/blog.css" />
     <link rel="stylesheet" href="assets/css/form.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <header>
-      <input type="checkbox" id="theme-switcher" />
+      <input type="checkbox" id="theme-switcher" name="mode-toggler" />
+      <label for="mode-toggler">Toggle Light/Dark Mode</label>
     </header>
     <main class="dark">
       <h1>Personal Blog</h1>
@@ -30,7 +32,6 @@
         <input id="submit-button" type="submit" value="Post Blog" />
       </form>
     </main>
-    <script src="assets/js/blog.js"></script>
     <script src="assets/js/form.js"></script>
     <script src="assets/js/logic.js"></script>
   </body>

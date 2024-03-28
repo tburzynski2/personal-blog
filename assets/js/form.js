@@ -27,4 +27,6 @@ submitButton.addEventListener("click", function (e) {
   // Push the new post to array & save in local storage
   postArray.push(blogPost);
   localStorage.setItem("postArray", JSON.stringify(postArray));
+
+  window.location.href = "blog.html";
 });
