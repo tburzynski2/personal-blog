@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
+    <header>
+      <input type="checkbox" id="theme-switcher" />
+    </header>
+    <main class="dark">
+      <h1>Personal Blog</h1>
+      <h2>What's on your mind?</h2>
+      <form action="post">
+        <label for="username-field">Username</label>
+        <input id="username" name="username-field" type="text" />
+        <label for="blog-title-field">Blog Title</label>
+        <input id="blog-title" name="blog-title-field" type="text" />
+        <label for="blog-text-field">Blog Content</label>
+        <textarea
+          id="blog-text"
+          name="blog-text-field"
+          rows="4"
+          cols="50"
+        ></textarea>
+      </form>
+    </main>
     <script src="assets/js/blog.js"></script>
     <script src="assets/js/form.js"></script>
     <script src="assets/js/logic.js"></script>
