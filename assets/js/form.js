@@ -7,26 +7,34 @@ submitButton.addEventListener("click", function (e) {
   // Stop page from attempting to post data
   e.preventDefault();
 
-  // Wrap all entry data in an object
-  const blogPost = {
-    username: usernameInput.value,
-    title: titleInput.value,
-    content: contentInput.value,
-  };
+  const username = usernameInput.value;
+  const title = titleInput.value;
+  const content = contentInput.value;
 
-  // Getting post array from storage
-  const postArrayString = localStorage.getItem("postArray");
+  if (username && title && content) {
+    // Wrap all entry data in an object
+    const blogPost = {
+      username: username,
+      title: title,
+      content: content,
+    };
 
-  // If it does not exist yet, set it to an empty array
-  if (!postArrayString) {
-    postArray = [];
+    // Getting post array from storage
+    const postArrayString = localStorage.getItem("postArray");
+
+    // If it does not exist yet, set it to an empty array
+    if (!postArrayString) {
+      postArray = [];
+    } else {
+      postArray = JSON.parse(postArrayString);
+    }
+
+    // Push the new post to array & save in local storage
+    postArray.push(blogPost);
+    localStorage.setItem("postArray", JSON.stringify(postArray));
+
+    window.location.href = "blog.html";
   } else {
-    postArray = JSON.parse(postArrayString);
+    alert("Please fill in missing fields.");
   }
-
-  // Push the new post to array & save in local storage
-  postArray.push(blogPost);
-  localStorage.setItem("postArray", JSON.stringify(postArray));
-
-  window.location.href = "blog.html";
 });
