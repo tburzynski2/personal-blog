@@ -19,7 +19,6 @@ header {
 /* Dark Mode */
 .dark {
   background-color: #243447;
-  height: 100vh;
   color: #bebebe;
 }
 
@@ -31,11 +30,14 @@ header {
   background-color: #111;
 }
 
+.dark .card {
+  border: 5px solid #f0ead6;
+}
+
 /* Light Mode */
 .light {
   background-color: #f0ead6;
   color: black;
-  height: 100vh;
 }
 
 .light li a {
@@ -44,4 +46,8 @@ header {
 
 .light li a:hover {
   background-color: rgb(29, 128, 210);
+}
+
+.light .card {
+  border: 5px solid black;
 }

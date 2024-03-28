@@ -9,27 +9,44 @@
     <link rel="stylesheet" href="assets/css/form.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body>
+  <body class="dark">
     <header>
-      <input type="checkbox" id="theme-switcher" name="mode-toggler" />
-      <label for="mode-toggler">Toggle Light/Dark Mode</label>
+      <div>
+        <input type="checkbox" id="theme-switcher" name="mode-toggler" />
+        <label for="mode-toggler">Toggle Light/Dark Mode</label>
+      </div>
     </header>
-    <main class="dark">
+    <main>
       <h1>Personal Blog</h1>
       <h2>What's on your mind?</h2>
       <form action="post">
-        <label for="username-field">Username</label>
-        <input id="username" name="username-field" type="text" />
-        <label for="blog-title-field">Blog Title</label>
-        <input id="blog-title" name="blog-title-field" type="text" />
-        <label for="blog-text-field">Blog Content</label>
+        <label for="username-field" class="form-element">Username:</label>
+        <input
+          id="username"
+          name="username-field"
+          type="text"
+          class="form-element"
+        />
+        <label for="blog-title-field" class="form-element">Blog Title:</label>
+        <input
+          id="blog-title"
+          name="blog-title-field"
+          type="text"
+          class="form-element"
+        />
+        <label for="blog-text-field" class="form-element">Blog Content:</label>
         <textarea
           id="blog-text"
           name="blog-text-field"
           rows="4"
           cols="50"
         ></textarea>
-        <input id="submit-button" type="submit" value="Post Blog" />
+        <input
+          id="submit-button"
+          type="submit"
+          value="Post Blog"
+          class="form-element"
+        />
       </form>
     </main>
     <script src="assets/js/form.js"></script>
