@@ -5,10 +5,12 @@ body {
 
 h1 {
   font-size: 300%;
+  padding: 4px 0;
 }
 
 h2 {
   font-size: 200%;
+  padding: 4px 0;
 }
 
 /* Header Styles */
@@ -16,10 +18,25 @@ header {
   height: 50px;
 }
 
+/* Footer Styles */
+footer {
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+}
+
 /* Dark Mode */
 .dark {
   background-color: #243447;
   color: #bebebe;
+}
+
+.dark header {
+  border-bottom: 2px solid #f0ead6;
 }
 
 .dark li a {
@@ -34,10 +51,22 @@ header {
   border: 5px solid #f0ead6;
 }
 
+.dark footer {
+  border-top: 2px solid #f0ead6;
+}
+
+.dark footer a {
+  color: white;
+}
+
 /* Light Mode */
 .light {
   background-color: #f0ead6;
   color: black;
+}
+
+.light header {
+  border-bottom: 2px solid black;
 }
 
 .light li a {
@@ -50,4 +79,8 @@ header {
 
 .light .card {
   border: 5px solid black;
+}
+
+.light footer {
+  border-top: 2px solid black;
 }

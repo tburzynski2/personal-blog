@@ -1,4 +1,4 @@
-const bodyContainer = document.querySelector("body");
+const mainContainer = document.querySelector("main");
 const backButton = document.querySelector("#back-button");
 
 // Getting post array from storage
@@ -23,7 +23,7 @@ for (post of postArray) {
   postTitle.textContent = title;
   postCard.appendChild(postTitle);
   const postUser = document.createElement("h3");
-  postUser.textContent = username;
+  postUser.textContent = `By ${username}`;
   postCard.appendChild(postUser);
   const postContent = document.createElement("p");
   postContent.textContent = content;
@@ -31,7 +31,7 @@ for (post of postArray) {
   postCard.classList.add("card");
 
   // Appending div containing all new elements to main container
-  bodyContainer.appendChild(postCard);
+  mainContainer.appendChild(postCard);
 }
 
 backButton.addEventListener("click", function (e) {
