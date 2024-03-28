@@ -1,9 +1,11 @@
+/* Aligning header elements with flexbox */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Blog post styles */
 .card {
   border-radius: 5px;
   padding: 5%;

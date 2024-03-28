@@ -34,6 +34,7 @@ for (post of postArray) {
   mainContainer.appendChild(postCard);
 }
 
+// Back button takes you back to entry landing page
 backButton.addEventListener("click", function (e) {
   window.location.href = "index.html";
 });
